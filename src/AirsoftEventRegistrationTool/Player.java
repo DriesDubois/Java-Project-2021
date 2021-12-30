@@ -4,11 +4,32 @@ public class Player {
     private String name;
     private String surname;
     private String mailadress;
+    private double registrationPrice;
+    private RentalKit rentalKit;
 
-    public Player(String name, String surname, String mailadress) {
+    public Player(String name, String surname, String mailadress, double registrationPrice, RentalKit rentalKit) {
         this.name = name;
         this.surname = surname;
         this.mailadress = mailadress;
+        this.registrationPrice = registrationPrice;
+        this.rentalKit = rentalKit;
+    }
+
+
+    public double getRegistrationPrice() {
+        return registrationPrice;
+    }
+
+    public void setRegistrationPrice(double registrationPrice) {
+        this.registrationPrice = registrationPrice;
+    }
+
+    public RentalKit getRentalKit() {
+        return rentalKit;
+    }
+
+    public void setRentalKit(RentalKit rentalKit) {
+        this.rentalKit = rentalKit;
     }
 
     public String getName() {

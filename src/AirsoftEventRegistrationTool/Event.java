@@ -1,41 +1,61 @@
 package AirsoftEventRegistrationTool;
 
-public class Event {
-    private String naam;
-    private String organisator;
-    private PlayerList playerlist;
-    private String locatie;
-    private double organisatiekosten;
-    private double organisatieinkomsten;
-    private int aantalDeelnemers;
+import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.Date;
 
-    public Event(String naam, String organisator, PlayerList playerlist, String locatie, double organisatiekosten, double organisatieinkomsten , int aantalDeelnemers) {
-        this.naam = naam;
-        this.organisator = organisator;
-        this.locatie = locatie;
-        this.organisatiekosten = organisatiekosten;
-        this.organisatieinkomsten = organisatieinkomsten;
-        this.aantalDeelnemers=aantalDeelnemers;
+public class Event {
+    private String name;
+    private String host;
+    private PlayerList playerlist;
+    private String location;
+    private double organisationCosts;
+    private double organisationIncome;
+    private int numberOfParticipants;
+    private LocalDate date;
+
+    public Event(String naam, String host, String location , LocalDate date) {
+        this.name = naam;
+        this.host = host;
+        this.location = location;
+        this.date =date;
+
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    public int getNumberOfParticipants() {
+        return numberOfParticipants;
+    }
+
+    public void setNumberOfParticipants(int numberOfParticipants) {
+        this.numberOfParticipants = numberOfParticipants;
     }
 
     public void addPlayerToEvent(Player p){
         this.playerlist.AddPlayer(p);
     }
 
-    public String getNaam() {
-        return naam;
+    public String getName() {
+        return name;
     }
 
-    public void setNaam(String naam) {
-        this.naam = naam;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getOrganisator() {
-        return organisator;
+    public String getHost() {
+        return host;
     }
 
-    public void setOrganisator(String organisator) {
-        this.organisator = organisator;
+    public void setHost(String host) {
+        this.host = host;
     }
 
     public PlayerList getPlayerlist() {
@@ -46,39 +66,39 @@ public class Event {
         this.playerlist = playerlist;
     }
 
-    public String getLocatie() {
-        return locatie;
+    public String getLocation() {
+        return location;
     }
 
-    public void setLocatie(String locatie) {
-        this.locatie = locatie;
+    public void setLocation(String location) {
+        this.location = location;
     }
 
-    public double getOrganisatiekosten() {
-        return organisatiekosten;
+    public double getOrganisationCosts() {
+        return organisationCosts;
     }
 
-    public void setOrganisatiekosten(double organisatiekosten) {
-        this.organisatiekosten = organisatiekosten;
+    public void setOrganisationCosts(double organisationCosts) {
+        this.organisationCosts = organisationCosts;
     }
 
-    public double getOrganisatieinkomsten() {
-        return organisatieinkomsten;
+    public double getOrganisationIncome() {
+        return organisationIncome;
     }
 
-    public void setOrganisatieinkomsten(double organisatieinkomsten) {
-        this.organisatieinkomsten = organisatieinkomsten;
+    public void setOrganisationIncome(double organisationIncome) {
+        this.organisationIncome = organisationIncome;
     }
 
     @Override
     public String toString() {
         return "Event{" +
-                "naam='" + naam + '\'' +
-                ", organisator='" + organisator + '\'' +
+                "naam='" + name + '\'' +
+                ", organisator='" + host + '\'' +
                 ", playerlist=" + playerlist +
-                ", locatie='" + locatie + '\'' +
-                ", organisatiekosten=" + organisatiekosten +
-                ", organisatieinkomsten=" + organisatieinkomsten +
+                ", locatie='" + location + '\'' +
+                ", organisatiekosten=" + organisationCosts +
+                ", organisatieinkomsten=" + organisationIncome +
                 '}';
     }
 }

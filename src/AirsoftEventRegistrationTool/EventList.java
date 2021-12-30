@@ -8,4 +8,12 @@ public class EventList {
     public void AddEventToList (Event e){
         this.eventList.add(e);
     }
+
+    public ArrayList<Event> getEventList() {
+        return eventList;
+    }
+
+    public void setEventList(ArrayList<Event> eventList) {
+        this.eventList = eventList;
+    }
 }

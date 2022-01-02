@@ -1,13 +1,11 @@
 package AirsoftEventRegistrationTool;
 
 import java.time.LocalDate;
-import java.util.Calendar;
-import java.util.Date;
 
 public class Event {
     private String name;
     private String host;
-    private PlayerList playerlist;
+//    private UserList userlist;
     private String location;
     private double organisationCosts;
     private double organisationIncome;
@@ -38,10 +36,6 @@ public class Event {
         this.numberOfParticipants = numberOfParticipants;
     }
 
-    public void addPlayerToEvent(Player p){
-        this.playerlist.AddPlayer(p);
-    }
-
     public String getName() {
         return name;
     }
@@ -58,13 +52,6 @@ public class Event {
         this.host = host;
     }
 
-    public PlayerList getPlayerlist() {
-        return playerlist;
-    }
-
-    public void setPlayerlist(PlayerList playerlist) {
-        this.playerlist = playerlist;
-    }
 
     public String getLocation() {
         return location;
@@ -95,7 +82,6 @@ public class Event {
         return "Event{" +
                 "naam='" + name + '\'' +
                 ", organisator='" + host + '\'' +
-                ", playerlist=" + playerlist +
                 ", locatie='" + location + '\'' +
                 ", organisatiekosten=" + organisationCosts +
                 ", organisatieinkomsten=" + organisationIncome +

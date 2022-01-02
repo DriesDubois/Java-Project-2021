@@ -1,20 +1,28 @@
 package AirsoftEventRegistrationTool;
 
-public class Player {
+public class User {
     private String name;
     private String surname;
     private String mailadress;
     private double registrationPrice;
     private RentalKit rentalKit;
+    private int id;
 
-    public Player(String name, String surname, String mailadress, double registrationPrice, RentalKit rentalKit) {
+    public User(int id, String name, String surname, String mailadress) {
         this.name = name;
         this.surname = surname;
         this.mailadress = mailadress;
-        this.registrationPrice = registrationPrice;
-        this.rentalKit = rentalKit;
+        this.id = id;
     }
 
+    public String getCSVFormat() {
+        return this.id + ";" + this.name + ";" + this.surname + ";" + this.mailadress + "\n";
+    }
+
+
+    public int getId() {return id;}
+
+    public void setId(int id) {this.id = id;}
 
     public double getRegistrationPrice() {
         return registrationPrice;
@@ -58,10 +66,6 @@ public class Player {
 
     @Override
     public String toString() {
-        return "Player{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", mailadress='" + mailadress + '\'' +
-                '}';
+        return "UserID: " + this.id + " naam: " + this.surname + " " + this.name  + " mail: " + this.mailadress +  "\n";
     }
 }

@@ -1,9 +1,10 @@
 package AirsoftEventRegistrationTool;
 
-public class Marshal extends Player{
+public class Marshal extends User {
 
-    public Marshal(String name, String surname, String mailadress, double registrationPrice, RentalKit rentalKit) {
-        super(name, surname, mailadress, registrationPrice, rentalKit);
+
+    public Marshal(int id, String name, String surname, String mailadress) {
+        super(id, name, surname, mailadress);
     }
 
     @Override

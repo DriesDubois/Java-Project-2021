@@ -59,7 +59,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="12549" class="javax.swing.JList" binding="participantsList">
+          <component id="12549" class="javax.swing.JList" binding="playerList">
             <constraints/>
             <properties/>
           </component>

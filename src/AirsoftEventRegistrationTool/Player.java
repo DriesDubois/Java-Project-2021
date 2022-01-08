@@ -1,6 +1,6 @@
 package AirsoftEventRegistrationTool;
 
-public class User {
+public class Player {
     private String name;
     private String surname;
     private String mailadress;
@@ -8,7 +8,8 @@ public class User {
     private RentalKit rentalKit;
     private int id;
 
-    public User(int id, String name, String surname, String mailadress) {
+
+    public Player(int id, String name, String surname, String mailadress) {
         this.name = name;
         this.surname = surname;
         this.mailadress = mailadress;

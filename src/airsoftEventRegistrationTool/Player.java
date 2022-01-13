@@ -1,15 +1,15 @@
-package AirsoftEventRegistrationTool;
+package airsoftEventRegistrationTool;
 
 public class Player {
     private String name;
     private String surname;
     private String mailadress;
     private double registrationPrice;
-    private RentalKit rentalKit;
-    private int id;
+
+    private String id;
 
 
-    public Player(int id, String name, String surname, String mailadress) {
+    public Player(String id, String name, String surname, String mailadress ) {
         this.name = name;
         this.surname = surname;
         this.mailadress = mailadress;
@@ -17,29 +17,23 @@ public class Player {
     }
 
     public String getCSVFormat() {
-        return this.id + ";" + this.name + ";" + this.surname + ";" + this.mailadress + "\n";
+        return this.id + ";" + this.name + ";" + this.surname + ";" + this.mailadress + ";" + this.registrationPrice + "\n";
     }
 
 
-    public int getId() {return id;}
+    public String getId() {return id;}
 
-    public void setId(int id) {this.id = id;}
+    public void setId(String id) {this.id = id;}
 
-    public double getRegistrationPrice() {
+    public double getPrice() {
         return registrationPrice;
     }
 
-    public void setRegistrationPrice(double registrationPrice) {
+    public void setPrice(double registrationPrice) {
         this.registrationPrice = registrationPrice;
     }
 
-    public RentalKit getRentalKit() {
-        return rentalKit;
-    }
 
-    public void setRentalKit(RentalKit rentalKit) {
-        this.rentalKit = rentalKit;
-    }
 
     public String getName() {
         return name;

@@ -1,0 +1,42 @@
+All events in the memory 
+--------------------------------------------------------------- 
+Event ID: 1
+Naam event: sdf
+aantal deelnemers: 3
+Players in the event: 
+--------------------------------------------------------------- 
+- qsf qsf Email is not allowed
+- qsfqsfq qsf Email is not allowed
+- qsfqsfq qsfqsf Email is not allowed
+Event ID: 2
+Naam event: test 2
+aantal deelnemers: 0
+Players in the event: 
+--------------------------------------------------------------- 
+Event ID: 3
+Naam event: test 2
+aantal deelnemers: 3
+Players in the event: 
+--------------------------------------------------------------- 
+- dsq g gdg
+- dsq g gdg
+- dsq g gdg
+Event ID: 4
+Naam event: test 4
+aantal deelnemers: 0
+Players in the event: 
+--------------------------------------------------------------- 
+Event ID: 5
+Naam event: test 5
+aantal deelnemers: 0
+Players in the event: 
+--------------------------------------------------------------- 
+Event ID: 6
+Naam event: Test 5
+aantal deelnemers: 4
+Players in the event: 
+--------------------------------------------------------------- 
+- fa faf fa@fs.com
+- dubois dries dries@gmail.com
+- dubois dries dries@gmail.com
+- dubois dries dries@gmail.com
